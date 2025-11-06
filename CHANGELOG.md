@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-11-06
+
+### Fixed
+- **URL Trailing Slash Issues**: Removed double slashes in URLs caused by extra trailing slash after `${base}` ([#17](https://github.com/jdrhyne/volks-typo/issues/17), [#18](https://github.com/jdrhyne/volks-typo/issues/18))
+- **Category URL Slugification**: Fixed category links with slashes and spaces to properly generate URL-safe slugs ([#19](https://github.com/jdrhyne/volks-typo/issues/19))
+  - Categories like "UI/UX" now generate `/categories/ui-ux` instead of `/categories/ui/ux`
+  - Categories like "Web Development" now generate `/categories/web-development` instead of broken space-containing URLs
+
+### Changed
+- Updated Sidebar.astro: Fixed blog post links and category links
+- Updated blog.astro: Fixed blog post links
+- Updated [...slug].astro: Fixed "Back to Blog" link and category tag links
+
+### Technical Details
+- Applied `.replace(/[\/\s]+/g, '-')` to category slugification for proper URL formatting
+- Standardized `${base}` usage across all components to prevent double slashes
+- Ensured consistency between category page routing and category link generation
+
+### Credits
+Special thanks to @frank-kirgis for reporting all three issues with detailed information!
+
 ## [1.1.3] - 2025-08-04
 
 ### Fixed
