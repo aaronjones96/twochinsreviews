@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Volks-Typo Features', () => {
+test.describe('Two Chins Reviews Features', () => {
   test('dark mode toggle works correctly', async ({ page }) => {
     await page.goto('/');
     

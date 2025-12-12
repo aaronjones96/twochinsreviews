@@ -36,8 +36,8 @@ jobs:
       - name: Build with Astro
         run: npm run build
         env:
-          SITE: https://jdrhyne.github.io
-          BASE_PATH: /volks-typo/
+          SITE: ${{ secrets.SITE || 'https://aaronjones96.github.io' }}
+          BASE_PATH: ${{ secrets.BASE_PATH || '/twochinsreviews/' }}
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

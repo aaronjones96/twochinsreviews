@@ -1,8 +1,8 @@
 {
-  "name": "volks-typo",
+  "name": "two-chins-reviews",
   "type": "module",
-  "version": "1.2.0",
-  "description": "An Astro blog theme exploring the aesthetic tension between Bauhaus modernism and WW2-era monumental design",
+  "version": "1.0.0",
+  "description": "Two Chins Reviews - Honest food reviews and culinary adventures",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -10,26 +10,16 @@
     "astro": "astro",
     "check": "astro check",
     "lint": "eslint . --ext .js,.ts,.astro",
-    "format": "prettier --write .",
-    "generate-screenshots": "node generate-screenshots.js",
-    "test:features": "playwright test"
+    "format": "prettier --write ."
   },
-  "author": "@jdrhyne",
+  "author": "Two Chins",
   "license": "MIT",
-  "homepage": "https://github.com/jdrhyne/volks-typo",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jdrhyne/volks-typo.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jdrhyne/volks-typo/issues"
-  },
   "keywords": [
     "astro",
     "blog",
-    "theme",
-    "minimal",
-    "typography"
+    "food",
+    "reviews",
+    "restaurants"
   ],
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
